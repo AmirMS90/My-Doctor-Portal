@@ -1,0 +1,28 @@
+# Ignore system files and directories
+.DS_Store
+Thumbs.db
+
+# Ignore dependencies and build artifacts
+/node_modules/
+/vendor/
+/dist/
+/build/
+
+# Ignore environment-specific files
+.env
+.env.local
+.env.*.local
+
+# Ignore logs and cache
+/log/
+/cache/
+
+# Ignore user-specific files
+.idea/
+.vscode/
+*.swo
+*.swp
+
+# Ignore compiled PHP files
+*.phpc
+*.phptmp
