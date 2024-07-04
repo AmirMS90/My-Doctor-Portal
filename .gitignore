@@ -28,4 +28,4 @@ Thumbs.db
 *.phptmp
 
 # Ignore mytasks file
-tasks.txt
+mytasks.txt
