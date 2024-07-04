@@ -29,3 +29,6 @@ Thumbs.db
 
 # Ignore mytasks file
 mytasks.txt
+
+# Ignore sensitive info
+src/config.php
