@@ -26,3 +26,6 @@ Thumbs.db
 # Ignore compiled PHP files
 *.phpc
 *.phptmp
+
+# Ignore mytasks file
+tasks.txt
