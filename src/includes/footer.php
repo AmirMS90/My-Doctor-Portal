@@ -1,0 +1,1 @@
+<footer class="fixed bottom-0 w-full text-center bg-green-400 p-5 hover:cursor-grab hover:opacity-90 transition-opacity text-green-900 text-lg">footer</footer>
