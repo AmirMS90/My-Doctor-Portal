@@ -29,7 +29,7 @@ else { ?>
                         <li class="bg-green-400 p-1 hover:-translate-y-1 transition-transform">
                             <a href="register.php">register</a>
                         </li>
-                        <img class="darkModeBTN bg-green-400 rounded-r-lg p-1 hover:-translate-y-1 transition-transform" src=".//assets//images//theme_light_dark_icon.png" height="30" width="30"></img>
+                        <img class="darkModeBTN bg-green-400 rounded-r-lg p-1 hover:-translate-y-1 transition-transform hover:cursor-pointer" src=".//assets//images//theme_light_dark_icon.png" height="30" width="30"></img>
                     </ul>
                 </nav>
             </div>
