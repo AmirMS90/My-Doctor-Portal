@@ -1,7 +1,5 @@
 const darkModeBTN = document.querySelector(".darkModeBTN");
 const htmlElement = document.querySelector("html");
-const image = document.querySelector("#docIMG");
-const windowHeight = window.innerHeight;
 
 darkModeBTN.addEventListener("click", (e) => {
     e.stopImmediatePropagation();
@@ -15,11 +13,4 @@ darkModeBTN.addEventListener("click", (e) => {
         htmlElement.classList.add("dark");
         document.cookie = "darkMode=active; " + expires + "path=/";
     }
-});
-
-window.addEventListener("scroll", function () {
-    let imageTop = image.getBoundingClientRect().top;
-    let isVisible = imageTop < windowHeight * 0.6;
-
-    image.classList.toggle("revealIMG" , isVisible);
 });

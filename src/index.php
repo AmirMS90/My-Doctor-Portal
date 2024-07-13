@@ -12,7 +12,8 @@ else { ?>
         <link rel="stylesheet" href="./assets/css/tailwind.output.css">
         <link rel="stylesheet" href="./assets/css/index.styles.css">
         <title>Doctors Portal</title>
-        <script src="./assets/js/script.js" defer></script>
+        <script src=".//assets//js//scroll.js" defer></script>
+        <script src=".//assets//js//darkMode.js" defer></script>
     </head>
 
     <body class="dark:bg-slate-900 bg-white">
