@@ -48,3 +48,19 @@ function is_admin(): bool
 {
     return $_SESSION["role"] == "admin";
 }
+
+function get_file_name(): string{
+    return basename($_SERVER["PHP_SELF"]);
+}
+
+function get_dir(): string{
+    return basename(dirname($_SERVER['PHP_SELF']));
+}
+
+function is_dark_mode(): bool{
+    if (isset($_COOKIE['darkMode'])) {
+        if ($_COOKIE['darkMode'] == 'active')
+            return true;
+    }
+    return false;
+}

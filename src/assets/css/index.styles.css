@@ -1,0 +1,69 @@
+#about {
+    display: flow-root;
+}
+
+.bgIMG {
+    height: 38rem;
+    width: 99.9%;
+    background-image: url("../images/Digital_Health_Concept2.jpg");
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .bgIMG {
+        height: 35rem;
+        background-image: url("../images/Digital_Health_Concept.jpg");
+    }
+}
+
+@media only screen and (max-height: 650px) {
+    .bgIMG {
+        height: 35rem;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(74 222 128);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(20 83 45);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+#docIMG {
+    opacity: 0;
+    transform: translateY(1em);
+    transition: opacity 2s, transform 2s;
+}
+
+#docIMG.revealIMG {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal {
+    animation: reveal linear both;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 35%;
+}
+
+.revealFast {
+    animation: reveal linear both;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 20%;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
