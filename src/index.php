@@ -19,7 +19,7 @@ else { ?>
     <body class="dark:bg-slate-900 bg-white">
         <header class="bgIMG">
             <!-- <div class="bgIMG"></div> -->
-            <div class="top-20 left-2 rounded-lg bg-gradient-to-r from-green-400 p-5 hover:-translate-y-1 hover:opacity-90 transition-all text-green-900 flex justify-between sticky w-11/12">
+            <div class="top-20 left-2 sm:left-10 rounded-lg bg-gradient-to-r from-green-400 p-5 hover:-translate-y-1 hover:opacity-90 transition-all text-green-900 flex justify-between sticky w-11/12">
                 <h1 class="font-extrabold text-2xl hover:cursor-pointer md:text-3xl"><a href="./">Doctors Portal</a></h1>
                 <nav>
                     <ul class="flex">
@@ -29,7 +29,7 @@ else { ?>
                         <li class="bg-green-400 p-1 hover:-translate-y-1 transition-transform">
                             <a href="register.php">register</a>
                         </li>
-                        <button class="darkModeBTN bg-green-400 rounded-r-lg p-1 hover:-translate-y-1 transition-transform">dark</button>
+                        <img class="darkModeBTN bg-green-400 rounded-r-lg p-1 hover:-translate-y-1 transition-transform" src=".//assets//images//theme_light_dark_icon.png" height="30" width="30"></img>
                     </ul>
                 </nav>
             </div>
