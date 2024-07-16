@@ -1,6 +1,9 @@
 <?php include 'includes/functions.php';
 
-if (is_logged_in()) redirect("templates/dashboard.php");
+if (isset($_SESSION['user_id'])){
+    header("Location: templates/dashboard.php");
+    exit;
+}
 
 else { ?>
     <!DOCTYPE html>
