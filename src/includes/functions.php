@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-function sanitize_input(string $input):string
+function sanitize_input(string $input): string
 {
     $input = trim($input);
     $input = htmlspecialchars($input);
@@ -23,7 +23,8 @@ function validate_email(string $email): bool | string
     return filter_var($email, FILTER_VALIDATE_EMAIL);
 }
 
-function is_dark_mode(): bool{
+function is_dark_mode(): bool
+{
     if (isset($_COOKIE['darkMode'])) {
         if ($_COOKIE['darkMode'] == 'active')
             return true;
