@@ -2,20 +2,9 @@
 
 declare(strict_types=1);
 
-function execute_query(mysqli $db, string $query)
-{
-    $result = mysqli_query($db, $query);
-
-    if (!$result) {
-        return "Error executing query: " . mysqli_error($db);
-        exit();
-    }
-}
-
 function sanitize_input(string $input):string
 {
     $input = trim($input);
-    $input = stripslashes($input);
     $input = htmlspecialchars($input);
     return $input;
 }
@@ -26,7 +15,7 @@ function sql_input(mysqli $db, string $input): string
     return mysqli_real_escape_string($db, $input);
 }
 
-function validate_email(string $email): bool
+function validate_email(string $email): bool | string
 {
     if (empty($email)) {
         return false;
